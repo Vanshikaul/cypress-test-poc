@@ -7,7 +7,8 @@
     "merge-reports": "npx mochawesome-merge cypress/reports/*.json > cypress/reports/merged-report.json",
     "gen-html-report": "npx marge cypress/reports/merged-report.json --reportDir cypress/reports --inline",
     "generate-report": "npm run merge-reports && npm run gen-html-report",
-    "clear-reports": "rimraf ./cypress/reports/*"
+    "clear-reports": "rimraf ./cypress/reports/*",
+    "test-ui": "npm run clear-reports && npx cypress open && npm run generate-report"
   },
   "keywords": [],
   "author": "",
