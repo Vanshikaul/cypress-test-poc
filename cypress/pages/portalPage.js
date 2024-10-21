@@ -9,6 +9,7 @@ class PortalPage {
   snapshot_name = this.vm_name+"snapshot"
   snapshot_description = "Test description"
   schedule_name="auto-schedule"
+  one_week="7 days"
   getVmName(){
     return this.vm_name
   }
